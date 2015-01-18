@@ -12,6 +12,10 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+app.get('/about', function(req, res) {
+  res.render('about');
+});
+
 var port = 3000;
 
 app.listen(port);
