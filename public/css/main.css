@@ -34,3 +34,6 @@
 .navbar-default .navbar-brand:focus {
   background-color: #1bc7a2 !important;
 }
+.navbar-collapse {
+  background-color: #1f1f26;
+}
