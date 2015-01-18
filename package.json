@@ -1,0 +1,19 @@
+{
+  "name": "diy-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.1",
+    "express": "^4.11.0",
+    "express-handlebars": "^1.1.0",
+    "jquery": "^2.1.3",
+    "underscore": "^1.7.0"
+  }
+}
