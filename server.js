@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
   var requestMap = {
     baseUrl: diyConfig.url,
     apiRoute: '/explore/featured',
-    size: 5,
+    size: 12,
     offset: 0
   };
 
