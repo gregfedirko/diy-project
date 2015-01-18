@@ -16,6 +16,11 @@ app.get('/about', function(req, res) {
   res.render('about');
 });
 
+app.get('*', function(req, res) {
+  res.status(404);
+  res.render('404');
+})
+
 var port = 3000;
 
 app.listen(port);
