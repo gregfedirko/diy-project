@@ -31,6 +31,22 @@ app.get('/', function(req, res) {
 
 });
 
+app.get('/maker/:id', function(req, res) {
+
+  var requestMap = {
+    baseUrl: diyConfig.url,
+    apiRoute: '/makers',
+    id: req.params.id
+  };
+  specificRequest( requestMap, function(body) {
+    var data = {
+      maker: body.response
+    };
+    res.render('maker', data);
+  });
+
+});
+
 app.get('/about', function(req, res) {
   res.render('about');
 });
@@ -60,5 +76,18 @@ function paginatedRequest(optionsMap, callback) {
     }
   });
 
+}
+
+function specificRequest(optionsMap, callback) {
+  var url = optionsMap.baseUrl.concat(optionsMap.apiRoute, '/', optionsMap.id);
+  console.log(url);
+  request(url, function(error, response, body) {
+    if (error) { console.log(error); }
+
+    var parsedBody = JSON.parse(body);
+    console.log(parsedBody);
+
+    callback(parsedBody);
+  });
 }
 
