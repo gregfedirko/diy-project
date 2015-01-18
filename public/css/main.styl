@@ -1,3 +1,45 @@
-body 
-  background-color red
+// colors
+diy-green = #1bc7a2
+diy-black = #1F1F26
+diy-active-grey = #3F3D4D
+diy-nav-font-color = #fff
+
+// dimensions
+navbar-height = 80px
+
+.navbar
+  height navbar-height
+  border none
+  border-radius 0
+  background-color diy-black
+
+.container-fluid
+  max-width 960px
   
+
+
+.navbar-default .navbar-nav > li > a
+  color diy-nav-font-color
+  font-size 20px
+  line-height 50px
+  height navbar-height
+  
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus 
+    background-color diy-active-grey
+    color diy-nav-font-color
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus 
+    background-color diy-active-grey
+    color diy-nav-font-color
+    
+.navbar-brand
+  background-color diy-green
+  padding 9px
+  height navbar-height
+  width navbar-height
+
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
+  background-color diy-green !important
+
