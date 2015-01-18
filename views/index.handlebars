@@ -1,1 +1,12 @@
-<h1>Index View</h1>
+<div class="container-fluid">
+  <h1>Index View</h1>
+  <div class="row"> 
+  {{#each featured}}
+    <div class="col-md-8">
+      <h3>{{title}}</h3>
+      {{!-- <img src="http:{{icons.medium}}"> --}}
+      <p>{{description}}</p>
+    </div>
+  {{/each}}
+  </div>
+</div>
